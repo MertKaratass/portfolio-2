@@ -168,7 +168,7 @@ function deleteComment(index) {
     }
   }
 
-  // Re-display comments to update IDs
+
   document.querySelector(".Comment ul").innerHTML = "";
   comments.forEach(displayComment);
 }

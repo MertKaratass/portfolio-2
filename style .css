@@ -93,7 +93,8 @@
   transform: scale(1.1);
 }
 
-/* responsive */
+/*! responsive */
+
 @media (max-width: 855px) {
   .image {
     position: absolute;
@@ -119,7 +120,7 @@
     transform: scale(1.1);
   }
   .info p {
-    color: black;
+    color: white;
   }
   .icon-area {
     color: black;
@@ -169,7 +170,8 @@
     gap: 15px;
   }
 }
-/* responsive */
+
+/*! responsive */
 
 .baslik {
   display: flex;
@@ -216,7 +218,8 @@
 }
 
 .project-card {
-  margin-top: 1rem;
+  margin-top: 3.9rem;
+  margin-left: 1rem;
   max-height: 500px;
   grid-area: project-card;
   box-shadow: 1px 1px 5px 1px black;
@@ -449,9 +452,9 @@
 }
 
 .texting p {
-  word-wrap: break-word; /* Breaks long words to prevent horizontal scrolling */
-  white-space: normal; /* Allows the text to wrap to the next line */
-  max-width: 100%; /* Ensures the text does not exceed its container width */
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
 }
 
 .star {
@@ -474,4 +477,82 @@
   border: 3px solid #01b0f8;
   padding: 1px 15px;
   border-radius: 50px;
+}
+
+/*!responsiv */
+@media (min-width: 800px) and (max-width: 1400px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project-card"
+      "project-icon-main"
+      "bottom1";
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-icon-main {
+    width: 100%;
+  }
+
+  .bottom1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .project-card {
+    padding: 1rem 1rem;
+  }
+
+  .baslik {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project-card"
+      "project-icon-main"
+      "bottom1";
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-icon-main {
+    width: 100%;
+    margin-left: 23px;
+  }
+
+  .bottom1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .project-card {
+    padding: 1rem 1rem;
+  }
+
+  .baslik {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .about img {
+    width: 500px !important;
+    height: 100% !important;
+  }
 }
